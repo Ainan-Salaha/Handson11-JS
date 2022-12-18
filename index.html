@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handson11-JS Function</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+    <h1>1.Create one function with zero parameter having a console statement;</h1>
+    <pre>
+        function para(){
+            console.log("zero parameter")
+        }
+        para();
+    </pre>
+</div>
+
+<div class="main">
+    <h1>2.Create one function which takes two values as a parameter and print the sum of them as "Sum of 3, 4 is 7"</h1>
+    <pre>
+        function sum(a,b){
+            console.log(a+b)
+        }
+        sum(3,7)
+    </pre>
+</div>
+
+<div class="main">
+<h1>3.Create one arrow function</h1>
+<pre>
+    let sum =(x,y)=> {
+        <!-- return(x+y); -->
+        console.log(x+y)
+    }
+    sum(3,5)
+</pre>
+
+</div>
+
+<div class="main">
+    <h1>4.Print output: <br>
+        "var x = 21; <br>
+        var girl = function () { <br>
+            console.log(x); <br>
+            var x = 20; <br>
+        }; <br>
+        girl ();"</h1>
+        <pre>undefined</pre>
+</div>
+
+<div class="main">
+    <h1>5."Print output:  <br>
+        var x = 21; <br>
+        girl (); <br>
+        console.log(x) <br>
+        function girl() { <br>
+            console.log(x); <br>
+            var x = 20; <br>
+        };"</h1>
+        <pre>undefined
+            21
+        </pre>
+</div>
+
+<div class="main">
+    <h1>6."Print output
+
+        var x = 21;
+        a();
+        b();
+        
+          function a() {
+            
+           x = 20;
+          console.log(x);
+        };
+         function b() {
+            
+            x = 40;
+           console.log(x);
+        };"</h1>
+
+        <pre>20
+            40
+        </pre>
+</div>
+<div class="main">
+    <h1>7.Write a function that accepts parameter n and returns factorial of n</h1>
+    <pre>function fact(n){
+        let fact=1;
+        if(n==1 || n==0){
+            console.log(fact);
+        }else{
+            for(let i=2;i< =n;i++){
+                fact*=i;
+            }
+            console.log(fact);
+        }
+    }
+    
+    fact(5);</pre>
+</div>
+
+</body>
+</html>
